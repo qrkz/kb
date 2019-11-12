@@ -1,6 +1,6 @@
 $(function () {
 
-    $('textarea')[0].focus();
+    //$('textarea')[0].focus();
 
     var mainKB = [
         '\u{31}',
@@ -220,7 +220,7 @@ $(function () {
             if( $(this).attr("id") === "vjSp" ){$('textarea')[0].value += " ";}
             if( $(this).attr("id") === "vjTab" ){$('textarea')[0].value += "\u{0009}";}
             console.log("This is a Special Key and nothing will be performed for now");
-            $('textarea')[0].focus();
+            //$('textarea')[0].focus();
         }
         else{
             if( $(this).attr("id") === "vjSp" ){$('textarea')[0].value += " ";}
@@ -228,14 +228,14 @@ $(function () {
                 $('textarea')[0].value += $(this).text();
                 if(shiftCounter === 1){smallLetters();}
             }
-            $('textarea')[0].focus();
+            //$('textarea')[0].focus();
         }
     });
 
     $("#vjBkSp").click(function () {
         var textVal = $('#vjTextOutput').val();
         $('#vjTextOutput').val(textVal.substring(0, textVal.length - 1));
-        $('textarea')[0].focus();
+        //$('textarea')[0].focus();
     });
 
 });
