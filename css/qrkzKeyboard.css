@@ -29,7 +29,7 @@ button:hover{
     height: 100vh;justify-content: flex-end;
 }
 #vjTextOutput{
-    flex-grow: 0;max-height:30vh;height:30vh;
+    flex-grow: 0;height:60vh;
     background: #111; color: springgreen;
     font-size: 1.2rem;
     padding: 2vw;
