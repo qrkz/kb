@@ -1,0 +1,64 @@
+html, body{
+    background: #222; color: #ddd;
+    margin: 0; padding: 0;
+}
+*{
+    font-family: 'Ubuntu Mono','Courier New', Courier, monospace;
+    box-sizing: border-box;/*
+    box-shadow: inset red 2px 2px, inset red -1px -1px;*/
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+}
+button{
+    background:#222;
+    border:0;
+    color: #ddd;
+    flex-grow: 1;
+    display: flex; align-items: center; justify-content: center;
+    grid-column: span 2;/*
+    border: #ddd solid 2px;
+    border-radius: 0.3rem;*/
+}
+button:hover{
+    background: springgreen;
+    color:#222;
+}
+#qrkzKeyboardParent{
+    display: flex;flex-direction: column;
+    height: 100vh;justify-content: flex-end;
+}
+#vjTextOutput{
+    flex-grow: 1;
+    background: #111; color: springgreen;
+    font-size: 1.2rem;
+    padding: 2vw;
+    overflow-y: auto;
+    outline:none;
+}
+#vjTextOutput::selection{
+    color:#111; background: springgreen
+}
+#KBD{
+    height: 50vmin;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+}
+#KBD button{
+    font-size: 1.2rem;
+    padding: 0; margin:0;
+}
+.tabBtn{
+    grid-column: span 4;
+}
+.BtnSp{
+    background: #111;
+    color: springgreen;
+    box-shadow: inset #ddd 1px 1px, inset #ddd -1px -1px;
+}
+#vjBkSp, #vjCL{grid-column: span 3;}
+#vjEnt{grid-column: span 4;}
+#vjA{grid-column: 2/span 2;}
+#vjSp{grid-column: span 8;}
